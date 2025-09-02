@@ -1,0 +1,67 @@
+= AsciiDoc 문법 예시
+전형진 <your@email.com>
+2025-09-02
+:toc:
+:sectnums:
+:project-name: 밀폐공간 CO₂ 예측 시스템
+
+== 기본 문법
+아스키독은 *간단하고 강력한 문법*을 지원합니다.  
+이 프로젝트의 이름은 **{project-name}** 입니다.
+
+== 링크와 이미지
+공식 문서: https://asciidoc.org[AsciiDoc 공식 사이트]
+
+image::example.png[샘플 이미지, width=200, align=center]
+
+== 각주
+아스키독은 다양한 출력 포맷을 지원합니다.footnote:[예: PDF, HTML, DocBook 등]
+
+== 블록 박스
+[NOTE]
+====
+이건 참고사항 박스입니다. 문서 중간에 주석처럼 넣을 수 있어요.
+====
+
+[WARNING]
+====
+이건 경고 박스입니다!  
+중요한 경고 메시지를 강조할 때 사용합니다.
+====
+
+== 인용문
+[quote, Albert Einstein]
+____
+Imagination is more important than knowledge.
+____
+
+== 코드 블록
+[source,java]
+----
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello AsciiDoc!");
+    }
+}
+----
+
+== 여러 줄 블록
+----
+여기는 그냥 preformatted 블록
+띄어쓰기, 줄바꿈 그대로 유지됨
+----
+
+== 표 예시
+[cols="1,2,2", options="header"]
+|===
+| ID | 이름 | 직업
+| 1  | 철수 | 학생
+| 2  | 영희 | 개발자
+| 3  | 민수 | 디자이너
+|===
+
+== 수학 수식 (MathJax 필요)
+[latexmath]
+++++
+E = mc^2
+++++
